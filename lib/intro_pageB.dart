@@ -22,7 +22,7 @@ class IntroPageB extends StatelessWidget {
             ),
             Image.asset('assets/images/appintro.png', width: 200, height: 200),
             Text(
-              '필터링 서비스로 개인이\n원하는 정보만 빠르게 확인',
+              '필터링 서비스로 개인이\n원하는 정보만 빠르게 확인!',
               style: TextStyle(fontSize: 13),
             ),
             Column(
