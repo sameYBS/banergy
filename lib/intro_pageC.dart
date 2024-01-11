@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/home_screen.dart';
 
 class IntroPageC extends StatelessWidget {
   PageController controller;
@@ -30,9 +31,12 @@ class IntroPageC extends StatelessWidget {
               children: [
                 TextButton(
                   onPressed: () {
-                    controller.animateToPage(0,
-                        duration: Duration(milliseconds: 700),
-                        curve: Curves.easeOut);
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) =>
+                              const HomeScreen()), //HomeScreen부분을 수정하기
+                    );
                   },
                   child: Text(
                     '다음',
